@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show</title>
+</head>
+<body>
+    <h1>Comment ID: <%= comm.id %> </h1>
+    <h2><%= comm.comment %> - <%= comm.username %> </h2>
+    <a href="/comments">Back to app</a>
+    <a href="/comments/<%= comm.id %>/edit">Edt page</a>
+    <form method="post"action="/comments/<%= comm.id %>?_method=DELETE">
+        </textarea>
+        <button>Delete</button>
+    </form>
+</body>
+</html>
